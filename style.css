@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-family: inherit;
+}
+
+/* убрать нижнее подчеркивание для всех ссылок
+a {
+    text-decoration: none;
+} */
+
+/* подключение внешнего шрифта Google */
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Центрирование из расчета контент дисплея = 1440px */
+.center {
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+}
+
+.top {
+    height: 1024px;
+    background-image: url(./img/Fon_top.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main__title {
+    max-width: 789px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+    padding-top: 217px;
+}
+
+.main__text {
+    max-width: 481px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+
+/* сделать жирным текст внутри span */
+span {
+    font-weight: 700;
+}
+
+/* Кнопка "Поехали" */
+.main__button {
+    background: #9C0332;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 234px;
+    height: 49px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 44px;
+    transition: all 0.5s;
+}
+
+.main__button:hover {
+    background-color: #EB443F;
+    cursor: pointer;
+}
+
+.bottom {
+    height: 556px;
+    background-image: url(./img/Fon_bottom.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.bottom__card-1 {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./img/Card_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 379px;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.bottom__card-2 {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./img/Card_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 379px;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.bottom__card-3 {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./img/Card_3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 379px;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.bottom__text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 237px;
+    margin-left: 32px;
+}
