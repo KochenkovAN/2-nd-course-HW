@@ -53,7 +53,7 @@ alert(user.name); //вызываем любое свойство из объек
 
 //* Задание №9.1 *// способ с .
 //добавляем новое свойство в "user"
-// user.cityOfResidence = 'Moscow'
+user.cityOfResidence = 'Moscow'
 alert(user.cityOfResidence);
 
 //* Задание №9.1 *// способ с []
