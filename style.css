@@ -30,6 +30,16 @@ body {
     flex-direction: column;
 }
 
+.footer {
+    height: 800px;
+    background-image: url(./img/Fon_footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
 .main__title {
     max-width: 789px;
     font-family: 'Montserrat';
@@ -39,6 +49,49 @@ body {
     line-height: 78px;
     color: #FFFFFF;
     padding-top: 217px;
+}
+
+.footer__title {
+    max-width: 377px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+.footer__text {
+    max-width: 584px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+
+/* Кнопка "Играть" */
+.footer__button {
+    background: #9C0332;
+    border: 1px solid #9c0332;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 234px;
+    height: 49px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 44px;
+    transition: all 0.5s;
+}
+
+.footer__button:hover {
+    background-color: #EB443F;
+    border: 1px solid #EB443F;
+    cursor: pointer;
 }
 
 .main__text {
@@ -133,10 +186,10 @@ span {
 
 /* Мобильная версия сайта */
 @media (max-width: 1140px) {
-    .top{
+    .top {
         height: 735px;
     }
-    
+
     .bottom {
         height: 1221px;
         flex-wrap: nowrap;
@@ -164,6 +217,11 @@ span {
         align-items: center;
     }
 
+    .footer{
+        align-items: center;
+        height: 654px;
+    }
+
     .main__title {
         padding-top: 239px;
         max-width: 343px;
@@ -178,6 +236,27 @@ span {
     }
 
     .main__text {
+        max-width: 343px;
+        height: 66px;
+        font-size: 14px;
+        line-height: 22px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__title {
+        max-width: 243px;
+        height: 39px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-size: 32px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__text {
         max-width: 343px;
         height: 66px;
         font-size: 14px;
