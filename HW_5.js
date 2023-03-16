@@ -1,4 +1,5 @@
 //* Задание 1 *//
+// выбор минимального числа //
 // через if 
 let a = Number(prompt(`Введи первое число`));
 let b = Number(prompt(`Введи второе число`));
@@ -10,8 +11,8 @@ function numbers(a,b) {
     }
       else if (a === b) {
         return a || b;
-      }    
-}
+      }
+    }
 console.log(numbers(a,b));
 
 // через тернарные операторы
@@ -39,9 +40,7 @@ function typeOfNumber(c) {
       else if (isNaN(c)) {
         console.log(`Вы ввели не число`)};
 }
-console.log(typeOfNumber(c));
-// почему то в ответе вылезает еще undefined
-// если вот эти строчки return console.log(`Вы ввели четное (не четное) число`); заенить на соответственно return true (faulse), то undefinded не пишет
+typeOfNumber(c);
 
 //* Задание 3.1 *//
 let d = Number(prompt(`Введите число`));
@@ -51,17 +50,17 @@ function squareOfNumber(d) {
     }
 console.log(squareOfNumber(d));
 
-// //* Задание 3.2 *//
+//* Задание 3.2 *//
 let d = Number(prompt(`Введите число`));
 function squareOfNumber(d) {
-    return d * d;
+    return console.log(d * d);
     }
-console.log(squareOfNumber(d));
+squareOfNumber(d);
 
 //* Задание 4 *//
 let age = Number(prompt(`Введите ваш возраст`));
 function whatAge(age) {
-    if (age < 0) {console.log(`Вы ввели неправильное значение`);} 
+    if (age < 0 || isNaN(age)) {console.log(`Вы ввели неправильное значение`);} 
     else if (age >= 0 && age <= 12) {console.log(`Привет, друг!`);}
     else if (age >= 13) {console.log(`Добро пожаловать!`);}
 }
@@ -77,20 +76,18 @@ function twoNumbers(e, f) {
         return console.log(`Одно или оба значения не являются числом`);
     }
 }
-console.log(twoNumbers(e, f));
-// почему то в ответе вылезает еще undefined
+twoNumbers(e, f);
 
 //* Задание 6 *//
 let g = Number(prompt(`Введите число`));
 function chekNumber(g) {
     if (isNaN(g) === false) {
-        return g ** 3;
+        console.log(`${g} в кубе равняется`, `${g ** 3}`);
     } else if (isNaN(g) === true) {
         console.log(`Переданный параметр не является числом`);
     }
 }
-console.log(`${g} в кубе равняется`, `${chekNumber(g)}`);
-// // Когда ввожу текст вместо числа, то появляется `Переданный параметр не является числом` и вылезает еще undefined
+chekNumber(g);
 
 //* Задание 7 *//
 let r1 = Number(prompt(`Введите радиус первой окружности`));
