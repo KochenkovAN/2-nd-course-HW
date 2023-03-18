@@ -87,3 +87,18 @@ console.log(newGetLengthWords);//[5, 0, 4, 19, 5]
 let arr = [-10, 5, -6, 9, 8, -3, 7, 6, -100, -2, 5];//произвольный массив чисел
 let result = arr.filter(item => item < 0);
 console.log(result);
+
+//* Задание 14 *//
+let arr = [];//создаем пустой массив
+let min = 0;
+let max = 10;
+let count = 10;//длинна массива
+
+for ( let i = min; i < count; ++i ) {
+    arr.push( Math.round(Math.random() * max) );//Math.round - округление до ближайшего целого
+                                                //Math.random - возвращает случайное число в диапазоне от 0 (включительно) до 1 (но не включая 1)
+}
+
+let arrNew = arr.filter(item => ((item % 2) === 0));//оставляем только четные элементы массива
+console.log(arr);//рандомный массив из 10 элементов
+console.log(arrNew);//рандомный массив, только с четными элементами
