@@ -102,3 +102,20 @@ for ( let i = min; i < count; ++i ) {
 let arrNew = arr.filter(item => ((item % 2) === 0));//оставляем только четные элементы массива
 console.log(arr);//рандомный массив из 10 элементов
 console.log(arrNew);//рандомный массив, только с четными элементами
+
+//* Задание 15 *//
+let arr = [];//создаем пустой массив
+let min = 0;
+let max = 10;
+let count = 6;//длинна массива
+
+for ( let i = min; i < count; ++i ) {
+    arr.push( Math.round(Math.random() * max) );//Math.round - округление до ближайшего целого
+                                                //Math.random - возвращает случайное число в диапазоне от 0 (включительно) до 1 (но не включая 1)
+}
+console.log(arr);
+
+let arrNew = arr.reduce((a, b) => a + b);//сумма всех элементов массива
+let sum = arrNew / count;
+console.log(arrNew);//сумма всех элементов массива
+console.log(sum);//среднее арифметическое
