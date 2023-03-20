@@ -101,7 +101,7 @@ let max = 10;
 let count = 10;//длинна массива
 
 for ( let i = min; i < count; ++i ) {
-    arr.push( Math.round(Math.random() * max) );//Math.round - округление до ближайшего целого
+    arr.push( Math.round(Math.random() * (max - min)) + min);//Math.round - округление до ближайшего целого
                                                 //Math.random - возвращает случайное число в диапазоне от 0 (включительно) до 1 (но не включая 1)
 }
 
@@ -116,7 +116,7 @@ let max = 10;
 let count = 10;//длинна массива
 
 for ( let i = min; i < count; ++i ) {
-    arr.push( Math.round(Math.random() * max) );//Math.round - округление до ближайшего целого
+    arr.push( Math.round(Math.random() * (max - min)) + min);//Math.round - округление до ближайшего целого
                                                 //Math.random - возвращает случайное число в диапазоне от 0 (включительно) до 1 (но не включая 1)
 }
 console.log(arr);
