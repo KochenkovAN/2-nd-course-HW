@@ -184,6 +184,37 @@ span {
     margin-left: 32px;
 }
 
+.footer__bottom {
+    height: 800px;
+    background-image: url(./img/Fon_footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__bottom__title {
+    max-width: 396px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+.footer__bottom__text {
+    max-width: 584px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+
 /* Мобильная версия сайта */
 @media (max-width: 1140px) {
     .top {
@@ -217,7 +248,12 @@ span {
         align-items: center;
     }
 
-    .footer{
+    .footer {
+        align-items: center;
+        height: 654px;
+    }
+
+    .footer__bottom {
         align-items: center;
         height: 654px;
     }
@@ -245,7 +281,19 @@ span {
     }
 
     .footer__title {
-        max-width: 243px;
+        max-width: 264px;
+        height: 39px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-size: 32px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__bottom__title {
+        max-width: 264px;
         height: 39px;
         font-family: 'Montserrat';
         font-style: normal;
@@ -257,6 +305,15 @@ span {
     }
 
     .footer__text {
+        max-width: 343px;
+        height: 66px;
+        font-size: 14px;
+        line-height: 22px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__bottom__text {
         max-width: 343px;
         height: 66px;
         font-size: 14px;
