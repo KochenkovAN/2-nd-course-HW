@@ -3,6 +3,13 @@ let str = String(prompt('Введите любой текст'))
 let newStr = str.toUpperCase();
 alert(newStr);
 
+//* Задание 2 *//
+let arr = ['Кошка', 'Кит', 'Комар', 'Носорог'];
+let search = 'ко';//критерий поиска
+arr.forEach((searchStart) => {
+	if (searchStart.toLowerCase().startsWith(search.toLowerCase())) {
+		console.log(searchStart);}});
+
 //* Задание 3 *//
 // let a = 32.58884;
 console.log(Math.floor(a));//округление до меньшего целого
