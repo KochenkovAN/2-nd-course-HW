@@ -57,14 +57,14 @@ currentDate.setDate(currentDate.getDate()+73);
 console.log(currentDate);//дата, через 73 дня
 
 //* Задание 10 *//
+//* Задание 10 *//
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 let myDate = new Date();
-let rusDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()];
+let rusDate = "Дата: " + myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()].toLowerCase();
 let rusTime = "Время: " + myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
 console.log(rusDate);
 console.log(rusTime);
-//вопрос: как дни недели перевести в нижний регистр (days[myDate.getDay()]) Я как не пробывал toLowerCase(), ничего не получается. 
 
 //* Задание 11 *//
 let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
