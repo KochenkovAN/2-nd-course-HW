@@ -10,6 +10,29 @@ arr.forEach((searchStart) => {
 	if (searchStart.toLowerCase().startsWith(search.toLowerCase())) {
 		console.log(searchStart);}});
 
+//* решение Павла *//
+let arr = [];
+function searchStart(arr, search) {
+   arr.forEach((item) => {
+    if (item.toLowerCase().startsWith(search.toLowerCase())) {
+        console.log(item);
+    }
+   }) 
+}
+searchStart((['Кошка', 'Кит', 'Комар', 'Носорог']), "ко");
+
+//* решение Максима *//
+const searchStart = (arr, str) => {
+    let result = [];
+    arr.forEach(item => {
+        if(item.toLowerCase().startsWith(str.toLowerCase())) {
+            result.push(item);
+        }
+    });
+    return result;
+}
+console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], "ко"));
+
 //* Задание 3 *//
 // let a = 32.58884;
 console.log(Math.floor(a));//округление до меньшего целого
